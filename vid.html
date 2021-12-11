@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="rabota.js"></script>
+</head>
+<body onload="fullSelect()" style="background: #ffffff;">
+<div class="wrapperCenter">
+    <h1 style="color: rgb(0,0,0); ">Конвертер систем счисления</h1>
+</div>
+
+<div>
+    <p>В 10-чной системе</p>
+    <input type="number" id="des_input" oninput="changeSystem()" size="30%" maxlength="30"/>
+    <select id="selBox" onchange="changeSystem()"></select>
+</div>
+
+<div>
+    <p id="numberSystem">В $-ой системе</p>
+    <input type="text" id="des_output" onkeydown="return Filter(event)" onkeyup="EventListener(event)" size="30%"
+           maxlength="30"/>
+</div>
+</body>
+</html>
